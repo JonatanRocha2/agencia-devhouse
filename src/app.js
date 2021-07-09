@@ -1,13 +1,23 @@
-const express = require('express'); //Importar o express
+const express = require('express');
 
-const app = express(); //Iniciar o serviço
+const app = express();
+app.use(express.static('public'));
+
 
 app.get('/', (req, res) => {
-   res.send('Seja bem vindo!');
-}); //rota usando o metodo GET
+    res.sendFile(__dirname + "/views/home.html");
+});
+
+app.get('/home', (req, res) => {
+    res.sendFile(__dirname + "/views/home.html");
+});
+
+app.get('/news', (req, res) => {
+    res.sendFile(__dirname + "/views/news.html");
+});
 
 app.get('/manutencao', (req, res) => {
     res.sendFile(__dirname + "/views/manutencao.html");
 });
 
-app.listen(3000, () => console.log("Server Start!")); //Definir porta e mandar mensagem de inicio
+app.listen(3000, () => console.log("Server Start!")); 
