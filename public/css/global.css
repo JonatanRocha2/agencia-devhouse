@@ -1,15 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
-  }
-  
-  h1 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  .icon-social {
-    width: 80px;
-  }
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  background: gray;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+.icon-social {
+  width: 80px;
+}

@@ -1,24 +1,23 @@
 {
-  "name": "agencia-devhouse",
+  "name": "agenciadevhouse",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
     "dev": "./node_modules/.bin/nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JonatanRocha2/agencia-devhouse.git"
+    "url": "git+https://github.com/vinnydeveloper/agencia-devhouse.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JonatanRocha2/agencia-devhouse/issues"
+    "url": "https://github.com/vinnydeveloper/agencia-devhouse/issues"
   },
-  "homepage": "https://github.com/JonatanRocha2/agencia-devhouse#readme",
+  "homepage": "https://github.com/vinnydeveloper/agencia-devhouse#readme",
+  "description": "",
   "dependencies": {
     "express": "^4.17.1"
   },
